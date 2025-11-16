@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>API Project: File Metadata Microservice</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+      }
+      .container {
+        border: 1px solid #ccc;
+        padding: 40px;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>API Project: File Metadata Microservice</h1>
+
+    <h3>Usage:</h3>
+    <p>Please Upload a File ...</p>
+
+    <div class="container">
+      <form
+        enctype="multipart/form-data"
+        method="POST"
+        action="/api/fileanalyse"
+      >
+        <!-- ESTE name es lo que revisan los tests -->
+        <input type="file" name="upfile" />
+        <br /><br />
+        <button type="submit">Upload</button>
+      </form>
+    </div>
+
+    <p>by <a href="https://www.freecodecamp.org">freeCodeCamp</a></p>
+  </body>
+</html>
